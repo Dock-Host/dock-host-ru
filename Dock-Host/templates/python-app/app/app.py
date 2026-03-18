@@ -1,18 +1,14 @@
 from flask import Flask, jsonify
-import os
+
+from config import build_payload, get_port
 
 app = Flask(__name__)
 
 
 @app.get("/")
 def home():
-    return jsonify(
-        app="dock-host-python-example",
-        status="ok",
-        message="Hello from Dock-Host!",
-    )
+    return jsonify(build_payload())
 
 
 if __name__ == "__main__":
-    port = int(os.getenv("PORT", "8000"))
-    app.run(host="0.0.0.0", port=port)
+    app.run(host="0.0.0.0", port=get_port())

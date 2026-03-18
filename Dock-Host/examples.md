@@ -21,7 +21,7 @@ EXPOSE 3000
 CMD ["npm", "start"]
 ```
 
-Use `app/index.js` as the entry point, or adapt it to your own structure. A ready-to-use sample is included at [`templates/node-app/app/index.js`](templates/node-app/app/index.js).
+Use `app/index.js` as the entry point, or adapt it to your own structure. A ready-to-use sample is included at [`templates/node-app/app/index.js`](templates/node-app/app/index.js), and the template also shows how to split logic into additional files under `app/...`.
 
 ### Step 2 — Deploy
 
@@ -64,7 +64,7 @@ EXPOSE 8000
 CMD ["python", "app/app.py"]
 ```
 
-Use `app/app.py` as the entry point, or adapt it to your own structure. A ready-to-use sample is included at [`templates/python-app/app/app.py`](templates/python-app/app/app.py).
+Use `app/app.py` as the entry point, or adapt it to your own structure. A ready-to-use sample is included at [`templates/python-app/app/app.py`](templates/python-app/app/app.py), and the template also shows how to keep helper code in additional files under `app/...`.
 
 For FastAPI, replace the last line with:
 

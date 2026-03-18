@@ -10,7 +10,8 @@ Dock-Host/
 ├── app/                  # Main application code
 │   ├── index.js          # Entry point for a Node.js app
 │   ├── app.py            # Entry point for a Python app
-│   └── ...
+│   ├── ...
+│   └── supporting modules
 │
 ├── docker/               # Optional Docker-specific folder
 │   └── Dockerfile
@@ -75,7 +76,7 @@ Dock-Host/
 
 ### Example `app/index.js`
 
-A runnable sample is available at [`templates/node-app/app/index.js`](templates/node-app/app/index.js).
+A runnable sample is available at [`templates/node-app/app/index.js`](templates/node-app/app/index.js), with an extra helper module in [`templates/node-app/app/message.js`](templates/node-app/app/message.js).
 
 ```js
 const http = require('http');
@@ -105,7 +106,7 @@ Dock-Host/
 
 ### Example `app/app.py`
 
-A runnable sample is available at [`templates/python-app/app/app.py`](templates/python-app/app/app.py).
+A runnable sample is available at [`templates/python-app/app/app.py`](templates/python-app/app/app.py), with an extra helper module in [`templates/python-app/app/config.py`](templates/python-app/app/config.py).
 
 ```python
 from flask import Flask, jsonify

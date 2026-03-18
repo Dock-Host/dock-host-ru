@@ -13,5 +13,6 @@ This repository contains the Dock-Host documentation organized into a dedicated 
 - [`Dock-Host/api-reference.md`](Dock-Host/api-reference.md) — API authentication, endpoints, and metrics reference
 - [`Dock-Host/templates/node-app/app/index.js`](Dock-Host/templates/node-app/app/index.js) — runnable Node.js entrypoint example for `app/index.js`
 - [`Dock-Host/templates/python-app/app/app.py`](Dock-Host/templates/python-app/app/app.py) — runnable Python entrypoint example for `app/app.py`
+- [`Dock-Host/templates/`](Dock-Host/templates) — starter templates showing multi-file `app/...` layouts for Dock-Host apps
 
 Start with the main guide here: [`Dock-Host/README.md`](Dock-Host/README.md).
