@@ -21,3 +21,7 @@ Dock-Host is designed for developers who want the power of Docker without the ov
 - [Operations Guide](operations.md)
 - [Example Apps](examples.md)
 - [API Reference](api-reference.md)
+
+## Templates
+
+- [Node.js example entry point](templates/node-app/app/index.js)

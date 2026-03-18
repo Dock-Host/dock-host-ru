@@ -11,5 +11,6 @@ This repository contains the Dock-Host documentation organized into a dedicated 
 - [`Dock-Host/operations.md`](Dock-Host/operations.md) — monitoring, usage limits, logs, debugging, and free plan behavior
 - [`Dock-Host/examples.md`](Dock-Host/examples.md) — example deployments for Node.js, Python, static sites, and Ubuntu desktop containers
 - [`Dock-Host/api-reference.md`](Dock-Host/api-reference.md) — API authentication, endpoints, and metrics reference
+- [`Dock-Host/templates/node-app/app/index.js`](Dock-Host/templates/node-app/app/index.js) — runnable Node.js entrypoint example for `app/index.js`
 
 Start with the main guide here: [`Dock-Host/README.md`](Dock-Host/README.md).

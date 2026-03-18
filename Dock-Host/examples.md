@@ -14,14 +14,14 @@ For repository layout recommendations before using these examples, see [Project 
 ```dockerfile
 FROM node:20-alpine
 WORKDIR /app
-COPY package*.json ./
-RUN npm install --production
-COPY . .
+COPY package.json ./
+RUN npm install --omit=dev
+COPY app ./app
 EXPOSE 3000
-CMD ["node", "index.js"]
+CMD ["npm", "start"]
 ```
 
-Replace `index.js` with your actual entry point if it is different.
+Use `app/index.js` as the entry point, or adapt it to your own structure. A ready-to-use sample is included at [`templates/node-app/app/index.js`](templates/node-app/app/index.js).
 
 ### Step 2 — Deploy
 

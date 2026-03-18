@@ -67,9 +67,28 @@ This is the recommended starting point for simple projects and is especially con
 Dock-Host/
 │
 ├── Dockerfile
-├── index.js
+├── app/
+│   └── index.js
 ├── package.json
 └── .env
+```
+
+### Example `app/index.js`
+
+A runnable sample is available at [`templates/node-app/app/index.js`](templates/node-app/app/index.js).
+
+```js
+const http = require('http');
+
+const host = '0.0.0.0';
+const port = Number(process.env.PORT || 3000);
+
+const requestListener = (_req, res) => {
+  res.writeHead(200, { 'Content-Type': 'application/json' });
+  res.end(JSON.stringify({ app: 'dock-host-node-example', status: 'ok' }));
+};
+
+http.createServer(requestListener).listen(port, host);
 ```
 
 ## Python example layout
