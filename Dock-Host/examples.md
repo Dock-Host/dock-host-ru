@@ -59,10 +59,12 @@ FROM python:3.12-slim
 WORKDIR /app
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
-COPY . .
+COPY app ./app
 EXPOSE 8000
-CMD ["python", "app.py"]
+CMD ["python", "app/app.py"]
 ```
+
+Use `app/app.py` as the entry point, or adapt it to your own structure. A ready-to-use sample is included at [`templates/python-app/app/app.py`](templates/python-app/app/app.py).
 
 For FastAPI, replace the last line with:
 

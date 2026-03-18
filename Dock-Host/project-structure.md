@@ -97,9 +97,28 @@ http.createServer(requestListener).listen(port, host);
 Dock-Host/
 │
 ├── Dockerfile
-├── app.py
+├── app/
+│   └── app.py
 ├── requirements.txt
 └── .env
+```
+
+### Example `app/app.py`
+
+A runnable sample is available at [`templates/python-app/app/app.py`](templates/python-app/app/app.py).
+
+```python
+from flask import Flask, jsonify
+import os
+
+app = Flask(__name__)
+
+@app.get('/')
+def home():
+    return jsonify(app='dock-host-python-example', status='ok')
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=int(os.getenv('PORT', '8000')))
 ```
 
 ## Recommendation for GitHub deployments
